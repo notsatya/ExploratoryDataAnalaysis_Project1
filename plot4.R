@@ -9,7 +9,7 @@ date_time <- paste(data$Date, data$Time)
 data$Datetime <- as.POSIXct(date_time)
 
 
-#------------plot4
+# Code to create plot4
 par(mfrow=c(2,2), mar=c(4,4,2,1))
 with(data, {
   plot(Datetime,Global_active_power, type="l", 
