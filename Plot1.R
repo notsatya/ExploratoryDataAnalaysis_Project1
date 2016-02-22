@@ -8,7 +8,7 @@ data <-subset(alldata,Date >= "2007-02-01" & Date <= "2007-02-02")
 date_time <- paste(data$Date, data$Time)
 data$Datetime <- as.POSIXct(date_time)
 
-#---------------plot1
+#Code to create plot1
 #create the histogram for Plot1. 
 hist(data$Global_active_power, main="Global Active Power",xlab="Global Active Power (kilowatts)", col="Red")
 #copy the plot to a png file with said dimensions
