@@ -8,7 +8,7 @@ data <-subset(alldata,Date >= "2007-02-01" & Date <= "2007-02-02")
 date_time <- paste(data$Date, data$Time)
 data$Datetime <- as.POSIXct(date_time)
 
-#--------------plot3
+#Code to create plot3
 plot(data$Datetime,data$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
 lines(data$Datetime, data$Sub_metering_2,col="Red")
 lines(data$Datetime, data$Sub_metering_3,col="Blue")
